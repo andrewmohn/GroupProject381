@@ -9,8 +9,10 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include "EnumAndStrucs.h"
 #include "ColorCameraAdapter.cpp"
 #include "LegoSort.cpp"
+#include "Lego.cpp"
 
 
 // TODO: reference additional headers your program requires here
