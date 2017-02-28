@@ -1,3 +1,3 @@
 #pragma once
-enum LegoColor { red, blue, green, yellow };
+enum LegoColor { legoRed, legoGreen, legoBlue };
 struct CameraColor { int red; int green; int blue; };

@@ -1,2 +1,77 @@
-﻿  ColorCameraAdapter.cpp
-  ColorProcessing.vcxproj -> C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\Debug\ColorProcessing.exe
+﻿  stdafx.cpp
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(40): warning C4715: 'LegoSort::findLegoColor': not all control paths return a value
+  OutputAdapter.cpp
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(5): error C2011: 'OutputAdapter': 'class' type redefinition
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(5): note: see declaration of 'OutputAdapter'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(11): error C2027: use of undefined type 'OutputAdapter'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(5): note: see declaration of 'OutputAdapter'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(11): error C2059: syntax error: ')'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(12): error C2143: syntax error: missing ';' before '{'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(12): error C2447: '{': missing function header (old-style formal list?)
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(16): error C2027: use of undefined type 'OutputAdapter'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.cpp(5): note: see declaration of 'OutputAdapter'
+  LegoSort.cpp
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(4): error C2011: 'LegoSort': 'class' type redefinition
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(4): note: see declaration of 'LegoSort'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(16): error C2027: use of undefined type 'LegoSort'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(4): note: see declaration of 'LegoSort'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(16): error C2059: syntax error: ')'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(17): error C2143: syntax error: missing ';' before '{'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(17): error C2447: '{': missing function header (old-style formal list?)
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(21): error C2027: use of undefined type 'LegoSort'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(4): note: see declaration of 'LegoSort'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(23): error C2065: 'color': undeclared identifier
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(26): error C2027: use of undefined type 'LegoSort'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(4): note: see declaration of 'LegoSort'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(28): error C2065: 'color': undeclared identifier
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(28): error C2228: left of '.red' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(28): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(28): error C2228: left of '.green' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(28): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(28): error C2228: left of '.blue' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(28): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(32): error C2065: 'color': undeclared identifier
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(32): error C2228: left of '.red' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(32): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(32): error C2228: left of '.green' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(32): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(32): error C2228: left of '.blue' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(32): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(36): error C2065: 'color': undeclared identifier
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(36): error C2228: left of '.red' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(36): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(36): error C2228: left of '.green' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(36): note: type is 'unknown-type'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(36): error C2228: left of '.blue' must have class/struct/union
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(36): note: type is 'unknown-type'
+  Lego.cpp
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(4): error C2011: 'Lego': 'class' type redefinition
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(4): note: see declaration of 'Lego'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(14): error C2027: use of undefined type 'Lego'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(4): note: see declaration of 'Lego'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(14): error C2146: syntax error: missing ')' before identifier 'colour'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(14): error C2079: 'LegoColor' uses undefined class 'Lego'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(14): error C2146: syntax error: missing ';' before identifier 'colour'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(14): error C2059: syntax error: ')'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(16): error C2065: 'color': undeclared identifier
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(16): error C2059: syntax error: ';'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(17): error C2059: syntax error: '}'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(17): error C2143: syntax error: missing ';' before '}'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(19): error C2027: use of undefined type 'Lego'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(4): note: see declaration of 'Lego'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(20): error C2143: syntax error: missing ';' before '{'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\lego.cpp(20): error C2447: '{': missing function header (old-style formal list?)
+  ColorProcessing.cpp
+  ColorCameraAdapter.cpp
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(5): error C2011: 'ColorCameraAdapter': 'class' type redefinition
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(5): note: see declaration of 'ColorCameraAdapter'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(11): error C2027: use of undefined type 'ColorCameraAdapter'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(5): note: see declaration of 'ColorCameraAdapter'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(11): error C2059: syntax error: ')'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(12): error C2143: syntax error: missing ';' before '{'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(12): error C2447: '{': missing function header (old-style formal list?)
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(16): error C2027: use of undefined type 'ColorCameraAdapter'
+  c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(5): note: see declaration of 'ColorCameraAdapter'
+  Generating Code...
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(40): warning C4715: 'LegoSort::findLegoColor': not all control paths return a value
