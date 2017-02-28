@@ -12,6 +12,6 @@ public:
 	void getCameraValues(ColorCameraAdapter);
 	//Find which lego color is being seen
 	LegoColor findLegoColor();
-	//Send the number that the part should be sorted to
-	void setSortNumber();
+	//Define the lego
+	Lego createLego();
 };

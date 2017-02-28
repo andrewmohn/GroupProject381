@@ -4,20 +4,8 @@
 class ColorCameraAdapter
 {
 private:
-	ColorCameraAdapter* adapter = nullptr;
-	ColorCameraAdapter();
+	
 public:
-	//ColorCameraAdapter is a singleton, and will not have more than one class instanced
-	ColorCameraAdapter* startInstance();
+	ColorCameraAdapter();
 	CameraColor getCameraColor();
 };
-
-ColorCameraAdapter* ColorCameraAdapter::startInstance()
-{
-	if (adapter == nullptr)
-	{
-		adapter = new ColorCameraAdapter();
-		return adapter;
-	}
-	return adapter;
-}

@@ -4,20 +4,8 @@
 class OutputAdapter
 {
 private:
-	OutputAdapter* adapter = nullptr;
-	OutputAdapter();
-public:
-	//ColorCameraAdapter is a singleton, and will not have more than one class instanced
-	OutputAdapter* startInstance();
-	void sendToRobot(int);
-};
 
-OutputAdapter* OutputAdapter::startInstance()
-{
-	if (adapter == nullptr)
-	{
-		adapter = new OutputAdapter();
-		return adapter;
-	}
-	return adapter;
-}
+public:
+	OutputAdapter();
+	void sendLego(Lego);
+};

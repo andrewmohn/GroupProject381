@@ -13,6 +13,7 @@
 #include "ColorCameraAdapter.cpp"
 #include "LegoSort.cpp"
 #include "Lego.cpp"
+#include "OutputAdapter.cpp"
 
 
 // TODO: reference additional headers your program requires here

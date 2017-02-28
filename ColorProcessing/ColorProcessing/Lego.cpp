@@ -7,4 +7,16 @@ private:
 	LegoColor color;
 public:
 	Lego(LegoColor);
+	LegoColor getColor();
 };
+
+//lol english spelling
+Lego::Lego(LegoColor colour)
+{
+	color = colour;
+}
+
+LegoColor Lego::getColor()
+{
+	return color;
+}

@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
+	ColorCameraAdapter* colorCamera = new ColorCameraAdapter();
+	OutputAdapter* output = new OutputAdapter();
 	LegoSort* sorter = new LegoSort();
 
 	while (true)
