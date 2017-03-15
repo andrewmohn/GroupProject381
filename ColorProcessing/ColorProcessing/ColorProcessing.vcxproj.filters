@@ -27,6 +27,15 @@
     <ClInclude Include="EnumAndStrucs.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="ColorCameraAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LegoSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -39,9 +48,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LegoSort.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Lego.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="OutputAdapter.cpp">

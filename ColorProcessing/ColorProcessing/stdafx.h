@@ -10,10 +10,9 @@
 #include <stdio.h>
 #include <tchar.h>
 #include "EnumAndStrucs.h"
-#include "ColorCameraAdapter.cpp"
-#include "LegoSort.cpp"
-#include "Lego.cpp"
-#include "OutputAdapter.cpp"
+#include "ColorCameraAdapter.h"
+#include "LegoSort.h"
+#include "OutputAdapter.h"
 
 
 // TODO: reference additional headers your program requires here

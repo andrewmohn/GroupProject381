@@ -1,20 +1,28 @@
 #include "stdafx.h"
 
-//Output adapter is entirely unimplemented since, a) I don't know how it need to be done yet, and b) to make testing easier.
-class OutputAdapter
-{
-public:
-	OutputAdapter();
-	void sendLego(Lego);
-};
-
 OutputAdapter::OutputAdapter()
 {
 
 }
-
-void OutputAdapter::sendLego(Lego lego)
+bool OutputAdapter::requestColor() //This function will be activated by the robot when it needs to ID a color
 {
-	std::cout << lego.getColor();
+	return true;
+}
+void OutputAdapter::outputNumber(LegoColor color)
+{
+	std::cout << "The color you have entered is: ";
+
+	if (color == legoRed)
+	{
+		std::cout << "Red\n";
+	}
+	else if (color == legoGreen)
+	{
+		std::cout << "Green\n";
+	}
+	else if (color == legoBlue)
+	{
+		std::cout << "Blue\n";
+	}
 	return;
 }

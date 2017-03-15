@@ -145,14 +145,16 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ColorCameraAdapter.h" />
     <ClInclude Include="EnumAndStrucs.h" />
+    <ClInclude Include="LegoSort.h" />
+    <ClInclude Include="OutputAdapter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ColorCameraAdapter.cpp" />
     <ClCompile Include="ColorProcessing.cpp" />
-    <ClCompile Include="Lego.cpp" />
     <ClCompile Include="LegoSort.cpp" />
     <ClCompile Include="OutputAdapter.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -3,20 +3,19 @@
 
 #include "stdafx.h"
 
-using namespace std;
-
 int main()
 {
 	ColorCameraAdapter* colorCamera = new ColorCameraAdapter();
 	OutputAdapter* output = new OutputAdapter();
 	LegoSort* sorter = new LegoSort();
-	Lego* theLego;
 
 	while (true)
 	{
-		sorter->getCameraValues(*colorCamera);
-		theLego = new Lego(sorter->findLegoColor());
-		output->sendLego(*theLego);
+		if (output->requestColor())
+		{
+			sorter->getCameraValues(*colorCamera);
+			output->outputNumber(sorter->findLegoColor());
+		}
 	}
     return 0;
 }
