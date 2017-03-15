@@ -3,10 +3,14 @@ class LegoSort
 {
 private:
 	CameraColor color;
-	int redValues[2] = { 0, 255 };
-	int greenValues[2] = { 0, 255 };
-	int blueValues[2] = { 0, 255 };
-	LegoColor colors[2][2][2];
+
+	static const int NUM_RED = 2, NUM_GREEN = 2, NUM_BLUE = 2;
+	static const int COLOR_VARIANCE = 5;
+
+	int redValues[NUM_RED] = { 0, 255 };
+	int greenValues[NUM_GREEN] = { 0, 255 };
+	int blueValues[NUM_BLUE] = { 0, 255 };
+	LegoColor colors[NUM_RED][NUM_GREEN][NUM_BLUE];
 
 	int findRedIndex();
 	int findGreenIndex();
