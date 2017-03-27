@@ -22,7 +22,6 @@
     <ProjectGuid>{1EB3B309-25C1-4D46-B21E-E452B3B26220}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ColorProcessing</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
