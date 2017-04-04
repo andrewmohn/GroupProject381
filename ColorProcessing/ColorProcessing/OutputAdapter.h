@@ -3,7 +3,6 @@
 class OutputAdapter
 {
 private:
-
 public:
 	OutputAdapter();
 	bool requestColor(); //This function will be activated by the robot when it needs to ID a color

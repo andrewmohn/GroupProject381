@@ -6,12 +6,47 @@
 ColorCameraAdapter::ColorCameraAdapter()
 {
 	//Constructor will "Wrap" the camera object
+
 }
+
 CameraColor ColorCameraAdapter::getCameraColor()
 {
-	std::cout << "Please enter things for testing.\n";
-	std::cin >> color.red;
-	std::cin >> color.green;
-	std::cin >> color.blue;
-	return color;
+	VideoCapture cap(0);
+	Mat image;
+
+	if (!cap.isOpened())
+	{
+		std::cout << "Failed to open camera, retrying.";
+		cap.open(0);
+	}
+
+	if (cap.grab())
+	{
+		if (!cap.retrieve(image))
+		{
+			std::cout << "Failed to get image.\n";
+		}
+
+		if (image.empty())
+		{
+			std::cout << "Image is empty.\n";
+		}
+		namedWindow("window", WINDOW_AUTOSIZE);
+		imshow("window", image);
+		waitKey(0);
+	}
+
+	Mat mask(image.rows, image.cols, 0);
+	
+	Point pnt(image.cols / 2, image.rows / 2);
+
+	circle(mask, pnt, 50, Scalar(255), -1);
+	imshow("window", mask);
+	waitKey(0);
+
+	Scalar average = mean(image, mask);
+
+	CameraColor temp = { average[2], average[1], average[0] };
+
+	return temp;
 }

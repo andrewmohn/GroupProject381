@@ -1,11 +1,12 @@
 ﻿  stdafx.cpp
-  OutputAdapter.cpp
-  LegoSort.cpp
-  ColorProcessing.cpp
-  ColorCameraAdapter.cpp
-  Generating Code...
-c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(55): warning C4715: 'LegoSort::findBlueIndex': not all control paths return a value
-c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(35): warning C4715: 'LegoSort::findRedIndex': not all control paths return a value
-c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(45): warning C4715: 'LegoSort::findGreenIndex': not all control paths return a value
-  LINK : C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\Debug\ColorProcessing.exe not found or not built by the last incremental link; performing full link
-  ColorProcessing.vcxproj -> C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\Debug\ColorProcessing.exe
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.h(6): error C2143: syntax error: missing ';' before '*'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.h(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.h(6): error C2238: unexpected token(s) preceding ';'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.h(9): error C3646: 'getImage': unknown override specifier
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.h(9): error C2059: syntax error: '('
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.h(9): error C2238: unexpected token(s) preceding ';'
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.h(6): error C3646: 'image': unknown override specifier
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.h(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\outputadapter.h(11): error C2061: syntax error: identifier 'Mat'
+h:\opencv\opencv\build\include\opencv2\flann\logger.h(66): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'

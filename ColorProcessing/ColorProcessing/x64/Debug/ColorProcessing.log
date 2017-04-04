@@ -1,0 +1,4 @@
+﻿  ColorCameraAdapter.cpp
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(49): warning C4838: conversion from 'double' to 'int' requires a narrowing conversion
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\colorcameraadapter.cpp(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  ColorProcessing.vcxproj -> C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\x64\Debug\ColorProcessing.exe

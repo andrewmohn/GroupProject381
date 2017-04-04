@@ -4,6 +4,7 @@
 //
 
 #pragma once
+#pragma warning(disable:4996)
 
 #include "targetver.h"
 #include <iostream>
@@ -13,6 +14,8 @@
 #include "ColorCameraAdapter.h"
 #include "LegoSort.h"
 #include "OutputAdapter.h"
+#include <opencv2/opencv.hpp>
+using namespace cv;
 
 
 // TODO: reference additional headers your program requires here
