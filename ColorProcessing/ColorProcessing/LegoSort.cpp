@@ -15,12 +15,11 @@ LegoSort::LegoSort()
 	}
 
 	//Input the values available
-	colors[1][0][0] = legoRed;
+	colors[3][3][3] = legoRed;
 	colors[0][1][0] = legoGreen;
-	colors[0][0][1] = legoBlue;
-	colors[1][1][1] = legoWhite;
-	colors[0][0][0] = legoBlack;
-	colors[1][1][0] = legoYellow;
+	colors[0][0][0] = legoWhite;
+	colors[4][4][4] = legoBlack;
+	colors[2][1][1] = legoYellow;
 }
 
 int LegoSort::findRedIndex()

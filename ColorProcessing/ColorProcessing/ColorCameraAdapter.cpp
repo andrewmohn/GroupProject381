@@ -44,9 +44,12 @@ CameraColor ColorCameraAdapter::getCameraColor()
 	imshow("window", mask);
 	waitKey(0);
 
+
 	Scalar average = mean(image, mask);
 
 	CameraColor temp = { average[2], average[1], average[0] };
+
+	std::cout << "Color Values Red: " << temp.red << " Green: " << temp.green << " Blue: " << temp.blue << std::endl;
 
 	return temp;
 }

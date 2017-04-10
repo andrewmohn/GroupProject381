@@ -10,36 +10,34 @@ bool OutputAdapter::requestColor() //This function will be activated by the robo
 }
 void OutputAdapter::outputNumber(LegoColor color)
 {
-	std::cout << "The color you have entered is: ";
+	std::cout << "Outputting color " << color << " with pin output: ";
+	int num1 = color & 1;
+	int num2 = (color & 2) >> 1;
+	int num3 = (color & 4) >> 2;
 
-	if (color == legoRed)
+	if (num1 == 1)
 	{
-		std::cout << "Red\n";
-	}
-	else if (color == legoGreen)
-	{
-		std::cout << "Green\n";
-	}
-	else if (color == legoBlue)
-	{
-		std::cout << "Blue\n";
-	}
-	else if (color == legoYellow)
-	{
-		std::cout << "Yellow\n";
-	}
-	else if (color == legoWhite)
-	{
-		std::cout << "White\n";
-	}
-	else if (color == legoBlack)
-	{
-		std::cout << "Black\n";
+		std::cout << "1";
 	}
 	else
 	{
-		std::cout << "You have not entered a valid lego color value.\n";
-		//A failure to ID the lego would have this code create a repeat attempt to read what the lego is.
+		std::cout << "0";
+	}
+	if (num2 == 1)
+	{
+		std::cout << "1";
+	}
+	else
+	{
+		std::cout << "0";
+	}
+	if (num3 == 1)
+	{
+		std::cout << "1";
+	}
+	else
+	{
+		std::cout << "0";
 	}
 	return;
 }

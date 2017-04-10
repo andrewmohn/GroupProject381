@@ -9,6 +9,10 @@ int main()
 	OutputAdapter* output = new OutputAdapter();
 	LegoSort* sorter = new LegoSort();
 
-	colorCamera->getCameraColor();
+	sorter->getCameraValues(*colorCamera);
+	output->outputNumber(sorter->findLegoColor());
+
+
+	system("pause");
     return 0;
 }
