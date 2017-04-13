@@ -22,31 +22,31 @@ LegoSort::LegoSort()
 	colors[2][1][1] = legoYellow;
 }
 
-int LegoSort::findRedIndex()
+int LegoSort::findHueIndex()
 {
 	for (int i = 0; i < 2; i++)
 	{
-		if (redValues[i] + COLOR_VARIANCE > color.red && redValues[i] - COLOR_VARIANCE < color.red)
+		if (redValues[i] + COLOR_VARIANCE > color.hue && redValues[i] - COLOR_VARIANCE < color.hue)
 		{
 			return i;
 		}
 	}
 }
-int LegoSort::findGreenIndex()
+int LegoSort::findSaturationIndex()
 {
 	for (int i = 0; i < 2; i++)
 	{
-		if (greenValues[i] + COLOR_VARIANCE > color.green && greenValues[i] - COLOR_VARIANCE < color.green)
+		if (greenValues[i] + COLOR_VARIANCE > color.saturation && greenValues[i] - COLOR_VARIANCE < color.saturation)
 		{
 			return i;
 		}
 	}
 }
-int LegoSort::findBlueIndex()
+int LegoSort::findValueIndex()
 {
 	for (int i = 0; i < 2; i++)
 	{
-		if (blueValues[i] + COLOR_VARIANCE > color.blue && blueValues[i] - COLOR_VARIANCE < color.blue)
+		if (blueValues[i] + COLOR_VARIANCE > color.value && blueValues[i] - COLOR_VARIANCE < color.value)
 		{
 			return i;
 		}
@@ -61,5 +61,5 @@ void LegoSort::getCameraValues(ColorCameraAdapter adapter)
 //Find which lego color is being seen
 LegoColor LegoSort::findLegoColor()
 {
-	return colors[findRedIndex()][findGreenIndex()][findBlueIndex()];
+	return colors[findHueIndex()][findSaturationIndex()][findValueIndex()];
 }

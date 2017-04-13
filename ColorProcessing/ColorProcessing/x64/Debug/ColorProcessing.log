@@ -1,3 +1,6 @@
-﻿  ColorProcessing.cpp
+﻿  LegoSort.cpp
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(54): warning C4715: 'LegoSort::findValueIndex': not all control paths return a value
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(34): warning C4715: 'LegoSort::findHueIndex': not all control paths return a value
+c:\users\andrew\documents\github\groupproject381\colorprocessing\colorprocessing\legosort.cpp(44): warning C4715: 'LegoSort::findSaturationIndex': not all control paths return a value
   ColorProcessing.vcxproj -> C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\x64\Debug\ColorProcessing.exe
   ColorProcessing.vcxproj -> C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\x64\Debug\ColorProcessing.pdb (Full PDB)

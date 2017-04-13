@@ -12,9 +12,9 @@ private:
 	int blueValues[NUM_BLUE] = { 102, 104, 117, 130, 145 };
 	LegoColor colors[NUM_RED][NUM_GREEN][NUM_BLUE];
 
-	int findRedIndex();
-	int findGreenIndex();
-	int findBlueIndex();
+	int findHueIndex();
+	int findSaturationIndex();
+	int findValueIndex();
 public:
 	//Constructor
 	LegoSort();
