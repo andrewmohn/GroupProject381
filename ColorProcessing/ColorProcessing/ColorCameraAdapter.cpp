@@ -32,8 +32,6 @@ CameraColor ColorCameraAdapter::getCameraColor()
 			std::cout << "Image is empty.\n";
 		}
 
-
-
 		namedWindow("window", WINDOW_AUTOSIZE);
 		imshow("window", image);
 		waitKey(0);
@@ -51,7 +49,7 @@ CameraColor ColorCameraAdapter::getCameraColor()
 
 	Scalar average = mean(imageHsv, mask);
 
-	CameraColor temp = { average[2], average[1], average[0] };
+	CameraColor temp = { average[0], average[1], average[2] };
 
 	std::cout << "Color Value Hue: " << temp.hue << " Saturation: " << temp.saturation << " Value: " << temp.value << std::endl;
 

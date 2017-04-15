@@ -39,5 +39,7 @@ void OutputAdapter::outputNumber(LegoColor color)
 	{
 		std::cout << "0";
 	}
+
+	std::cout << std::endl;
 	return;
 }
