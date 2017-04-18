@@ -8,6 +8,8 @@
 
 #include "targetver.h"
 #include <iostream>
+#include <windows.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <tchar.h>
 #include "EnumAndStrucs.h"
@@ -15,7 +17,6 @@
 #include "LegoSort.h"
 #include "OutputAdapter.h"
 #include <opencv2/opencv.hpp>
-using namespace cv;
 
 
 // TODO: reference additional headers your program requires here

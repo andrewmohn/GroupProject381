@@ -2,8 +2,22 @@
 
 OutputAdapter::OutputAdapter()
 {
-
+	hSerial = CreateFileA("COM3", GENERIC_WRITE, 0,	NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL,	NULL);
+	DCB dcbSerialParams = { 0 };
+	dcbSerialParams.BaudRate = CBR_9600;
+	dcbSerialParams.ByteSize = 8;
+	dcbSerialParams.StopBits = ONESTOPBIT;
+	dcbSerialParams.Parity = NOPARITY;
+	dcbSerialParams.fDtrControl = DTR_CONTROL_ENABLE;
+	SetCommState(hSerial, &dcbSerialParams);
+	Sleep(2000); //Wait for reset
 }
+
+OutputAdapter::~OutputAdapter()
+{
+	CloseHandle(hSerial);
+}
+
 bool OutputAdapter::requestColor() //This function will be activated by the robot when it needs to ID a color
 {
 	return true;
@@ -11,35 +25,16 @@ bool OutputAdapter::requestColor() //This function will be activated by the robo
 void OutputAdapter::outputNumber(LegoColor color)
 {
 	std::cout << "Outputting color " << color << " with pin output: ";
-	int num1 = color & 1;
-	int num2 = (color & 2) >> 1;
-	int num3 = (color & 4) >> 2;
+	
+	DWORD bytesSend;
 
-	if (num1 == 1)
-	{
-		std::cout << "1";
-	}
-	else
-	{
-		std::cout << "0";
-	}
-	if (num2 == 1)
-	{
-		std::cout << "1";
-	}
-	else
-	{
-		std::cout << "0";
-	}
-	if (num3 == 1)
-	{
-		std::cout << "1";
-	}
-	else
-	{
-		std::cout << "0";
-	}
+	char num = '3';
 
-	std::cout << std::endl;
+	//Try to write the buffer on the Serial port
+	if (!WriteFile(hSerial, &num, sizeof(num), &bytesSend, 0))
+	{
+		std::cout << "Successfully Wrote to COM3\n";
+		std::cout << num << " Was sent. " << bytesSend << " Bytes were sent.";
+	}
 	return;
 }
