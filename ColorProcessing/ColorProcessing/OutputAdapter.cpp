@@ -24,17 +24,19 @@ bool OutputAdapter::requestColor() //This function will be activated by the robo
 }
 void OutputAdapter::outputNumber(LegoColor color)
 {
-	std::cout << "Outputting color " << color << " with pin output: ";
+//	std::cout << "Outputting color " << color << " with pin output: ";
 	
 	DWORD bytesSend;
-
-	char num = '3';
+	std::string s = std::to_string((int)color);
+	char num = s[0];
 
 	//Try to write the buffer on the Serial port
 	if(WriteFile(hSerial, &num, sizeof(num), &bytesSend, 0))
 	{
 		std::cout << "Successfully Wrote to COM3\n";
-		std::cout << num << " Was sent. " << bytesSend << " Bytes were sent.";
+		std::cout << num << " Was sent. " << bytesSend << " Bytes were sent.\n";
 	}
+	PurgeComm(hSerial, PURGE_RXCLEAR | PURGE_TXCLEAR);
+	
 	return;
 }

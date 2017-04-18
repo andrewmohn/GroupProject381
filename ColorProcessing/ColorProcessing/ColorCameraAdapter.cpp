@@ -37,18 +37,17 @@ CameraColor ColorCameraAdapter::getCameraColor()
 			std::cout << "Image is empty.\n";
 		}
 
-		namedWindow("window", WINDOW_AUTOSIZE);
-		imshow("window", image);
-		waitKey(0);
+//		namedWindow("window", WINDOW_AUTOSIZE);
+//		imshow("window", image);
+//		waitKey(0);
 	}
 
-	Mat mask(image.rows, image.cols, 0);
-	
-	Point pnt(image.cols / 2, image.rows / 2);
+	Mat mask(image.rows, image.cols, 0, Scalar(0));
+	Point pnt((image.cols / 2)+ 5, (image.rows / 2)+30);
+	circle(mask, pnt, 20, Scalar(255), -1);
 
-	circle(mask, pnt, 50, Scalar(255), -1);
-	imshow("window", mask);
-	waitKey(0);
+//	imshow("window", mask);
+//	waitKey(0);
 
 	cvtColor(image, imageHsv, COLOR_BGR2HSV);
 

@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <tchar.h>
+#include <math.h>
 #include <opencv2/opencv.hpp>
 #include "EnumAndStrucs.h"
 #include "OutputAdapter.h"
