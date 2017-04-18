@@ -12,7 +12,7 @@ ColorCameraAdapter::ColorCameraAdapter()
 CameraColor ColorCameraAdapter::getCameraColor()
 {
 	VideoCapture cap(0);
-	Mat image, imageHsv;
+	Mat image;
 
 	if (!cap.isOpened())
 	{
@@ -31,7 +31,6 @@ CameraColor ColorCameraAdapter::getCameraColor()
 		{
 			std::cout << "Image is empty.\n";
 		}
-
 		namedWindow("window", WINDOW_AUTOSIZE);
 		imshow("window", image);
 		waitKey(0);
@@ -45,13 +44,12 @@ CameraColor ColorCameraAdapter::getCameraColor()
 	imshow("window", mask);
 	waitKey(0);
 
-	cvtColor(image, imageHsv, COLOR_BGR2HSV);
 
-	Scalar average = mean(imageHsv, mask);
+	Scalar average = mean(image, mask);
 
-	CameraColor temp = { average[0], average[1], average[2] };
+	CameraColor temp = { average[2], average[1], average[0] };
 
-	std::cout << "Color Value Hue: " << temp.hue << " Saturation: " << temp.saturation << " Value: " << temp.value << std::endl;
+	std::cout << "Color Values Red: " << temp.red << " Green: " << temp.green << " Blue: " << temp.blue << std::endl;
 
 	return temp;
 }

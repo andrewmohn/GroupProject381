@@ -3,27 +3,55 @@
 LegoSort::LegoSort()
 {
 	//All non-designated lego values are considered a failure.
-	colors[0] = legoFail;
-	colors[1] = legoBlack;
-	colors[2] = legoBlue;
-	colors[3] = legoGreen;
-	colors[4] = legoRed;
-	colors[5] = legoWhite;
-	colors[6] = legoYellow;
-	colors[7] = legoGrey;
+	for (int i = 0; i < NUM_RED; i++)
+	{
+		for (int j = 0; j < NUM_GREEN; j++)
+		{
+			for (int k = 0; k < NUM_BLUE; k++)
+			{
+				colors[i][j][k] = legoFail;
+			}
+		}
+	}
+
+	//Input the values available
+	colors[3][3][3] = legoRed;
+	colors[0][1][0] = legoGreen;
+	colors[0][0][0] = legoWhite;
+	colors[4][4][4] = legoBlack;
+	colors[2][1][1] = legoYellow;
 }
 
-int LegoSort::findHueIndex()
+int LegoSort::findRedIndex()
 {
-	for (int i = 0; i < NUM_HUES; i++)
+	for (int i = 0; i < 2; i++)
 	{
-		if (hues[i] + COLOR_VARIANCE > color.hue && hues[i] - COLOR_VARIANCE < color.hue)
+		if (redValues[i] + COLOR_VARIANCE > color.red && redValues[i] - COLOR_VARIANCE < color.red)
 		{
 			return i;
 		}
 	}
 }
-
+int LegoSort::findGreenIndex()
+{
+	for (int i = 0; i < 2; i++)
+	{
+		if (greenValues[i] + COLOR_VARIANCE > color.green && greenValues[i] - COLOR_VARIANCE < color.green)
+		{
+			return i;
+		}
+	}
+}
+int LegoSort::findBlueIndex()
+{
+	for (int i = 0; i < 2; i++)
+	{
+		if (blueValues[i] + COLOR_VARIANCE > color.blue && blueValues[i] - COLOR_VARIANCE < color.blue)
+		{
+			return i;
+		}
+	}
+}
 
 //Get the camera values from the adapter
 void LegoSort::getCameraValues(ColorCameraAdapter adapter)
@@ -33,5 +61,5 @@ void LegoSort::getCameraValues(ColorCameraAdapter adapter)
 //Find which lego color is being seen
 LegoColor LegoSort::findLegoColor()
 {
-	return colors[findHueIndex()];
+	return colors[findRedIndex()][findGreenIndex()][findBlueIndex()];
 }
