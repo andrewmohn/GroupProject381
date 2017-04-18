@@ -1,5 +1,5 @@
 #include "stdafx.h"
-using namespace cv;
+
 
 //Color Camera Adapter is entirely unimplemented since, a) I don't know how it need to be done yet, and b) to make testing easier.
 
@@ -7,12 +7,16 @@ using namespace cv;
 ColorCameraAdapter::ColorCameraAdapter()
 {
 	//Constructor will "Wrap" the camera object
+	cap.open(0);
+}
 
+ColorCameraAdapter::~ColorCameraAdapter()
+{
+	cap.release();
 }
 
 CameraColor ColorCameraAdapter::getCameraColor()
 {
-	VideoCapture cap(0);
 	Mat image, imageHsv;
 
 	if (!cap.isOpened())

@@ -31,7 +31,7 @@ void OutputAdapter::outputNumber(LegoColor color)
 	char num = '3';
 
 	//Try to write the buffer on the Serial port
-	if (!WriteFile(hSerial, &num, sizeof(num), &bytesSend, 0))
+	if(WriteFile(hSerial, &num, sizeof(num), &bytesSend, 0))
 	{
 		std::cout << "Successfully Wrote to COM3\n";
 		std::cout << num << " Was sent. " << bytesSend << " Bytes were sent.";

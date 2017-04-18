@@ -12,11 +12,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <tchar.h>
+#include <opencv2/opencv.hpp>
 #include "EnumAndStrucs.h"
+#include "OutputAdapter.h"
 #include "ColorCameraAdapter.h"
 #include "LegoSort.h"
-#include "OutputAdapter.h"
-#include <opencv2/opencv.hpp>
+
 
 
 // TODO: reference additional headers your program requires here
