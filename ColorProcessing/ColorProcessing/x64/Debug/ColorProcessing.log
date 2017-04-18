@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿  ColorProcessing.cpp
-=======
-=======
->>>>>>> ad36c28... commit
 ﻿  OutputAdapter.cpp
-ColorCameraAdapter.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
->>>>>>> ad36c28... commit
   ColorProcessing.vcxproj -> C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\x64\Debug\ColorProcessing.exe
   ColorProcessing.vcxproj -> C:\Users\Andrew\Documents\GitHub\GroupProject381\ColorProcessing\x64\Debug\ColorProcessing.pdb (Full PDB)
